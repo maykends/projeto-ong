@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Mãos que Transformam</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro de Participação</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="cadastro.html">Participe</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Faça parte da nossa comunidade</h2>
+
+            <p>
+                Preencha o formulário abaixo para participar como
+                voluntário, doador ou nas duas modalidades.
+            </p>
+
+            <form action="#" method="post">
+
+                <fieldset>
+
+                    <legend>Dados pessoais</legend>
+
+                    <p>
+                        <label for="nome">
+                            Nome completo:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="cpf">
+                            CPF:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cpf"
+                            name="cpf"
+                            placeholder="000.000.000-00"
+                            pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                            title="Digite o CPF no formato 000.000.000-00"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="email">
+                            E-mail:
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="usuario@email.com"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="nascimento">
+                            Data de nascimento:
+                        </label>
+
+                        <input
+                            type="date"
+                            id="nascimento"
+                            name="nascimento"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="telefone">
+                            Telefone:
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            placeholder="(83) 99999-9999"
+                            pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+                            title="Digite no formato (00) 00000-0000"
+                            required>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Endereço</legend>
+
+                    <p>
+                        <label for="cep">
+                            CEP:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cep"
+                            name="cep"
+                            placeholder="00000-000"
+                            pattern="[0-9]{5}-[0-9]{3}"
+                            title="Digite o CEP no formato 00000-000"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="endereco">
+                            Endereço:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="endereco"
+                            name="endereco"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="numero">
+                            Número:
+                        </label>
+
+                        <input
+                            type="number"
+                            id="numero"
+                            name="numero"
+                            min="1"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="complemento">
+                            Complemento:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="complemento"
+                            name="complemento">
+                    </p>
+
+                    <p>
+                        <label for="cidade">
+                            Cidade:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cidade"
+                            name="cidade"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="estado">
+                            Estado:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="estado"
+                            name="estado"
+                            maxlength="2"
+                            placeholder="PB"
+                            required>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Forma de participação</legend>
+
+                    <p>
+                        Selecione como deseja contribuir:
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="doador"
+                            name="participacao"
+                            value="doador"
+                            required>
+
+                        <label for="doador">
+                            Doador
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="voluntario"
+                            name="participacao"
+                            value="voluntario">
+
+                        <label for="voluntario">
+                            Voluntário
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="ambos"
+                            name="participacao"
+                            value="ambos">
+
+                        <label for="ambos">
+                            Doador e voluntário
+                        </label>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Disponibilidade</legend>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="semana"
+                            name="disponibilidade"
+                            value="semana">
+
+                        <label for="semana">
+                            Durante a semana
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="fim-semana"
+                            name="disponibilidade"
+                            value="fim-semana">
+
+                        <label for="fim-semana">
+                            Finais de semana
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="eventos"
+                            name="disponibilidade"
+                            value="eventos">
+
+                        <label for="eventos">
+                            Eventos e campanhas
+                        </label>
+                    </p>
+
+                </fieldset>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="termos"
+                        name="termos"
+                        required>
+
+                    <label for="termos">
+                        Declaro que as informações são verdadeiras
+                        e aceito os termos de participação.
+                    </label>
+                </p>
+
+                <p>
+                    <button type="submit">
+                        Enviar cadastro
+                    </button>
+
+                    <button type="reset">
+                        Limpar formulário
+                    </button>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Mãos que Transformam.
+            Todos os direitos reservados.
+        </p>
+    </footer>
+
+</body>
+
+</html>
